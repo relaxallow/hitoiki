@@ -103,6 +103,24 @@ p:last-child { margin-bottom: 0; }
 .item small { color: var(--ink-3); font-size: 13px; }
 .soon { margin-left: auto; color: var(--ink-3); font-size: 11px; white-space: nowrap; }
 
+
+/* 吸う4秒・吐く6秒の長さくらべ */
+.ratio { display: flex; gap: 4px; margin: 34px 0 30px; }
+.ratio div {
+  padding: 13px 0; text-align: center;
+  font-size: 12px; border-radius: 4px; white-space: nowrap;
+}
+.ratio .in {
+  flex: 4;
+  background: color-mix(in srgb, var(--breath) 26%, transparent);
+  color: var(--ink);
+}
+.ratio .out {
+  flex: 6;
+  background: color-mix(in srgb, var(--breath) 13%, transparent);
+  color: var(--ink);
+}
+
 footer { padding: 70px 0 90px; border-top: 1px solid var(--line); }
 footer a { color: var(--breath); }
 </style>
@@ -138,6 +156,36 @@ footer a { color: var(--breath); }
     <p class="quiet">
       数えるのは、<span class="breath">吸いたくなった回数</span>と、<span class="breath">見送った回数</span>。
       吸ってしまっても記録は消えません。それも1件として並ぶだけです。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>なぜ、ひと息で足りるのか。</h2>
+    <p class="quiet">
+      タバコを吸うとき、人は必ず深く吸って、長く吐いています。
+      1日20本なら、それは1日20回の深呼吸でもあります。
+    </p>
+    <p class="quiet">
+      禁煙でなくなるのは、ニコチンだけではありません。
+      <span class="breath">その20回も、同時になくなります。</span>
+      「吸いたい」の何割かは、たぶんそれです。
+    </p>
+
+    <div class="ratio">
+      <div class="in">4秒 吸う</div>
+      <div class="out">6秒 吐く</div>
+    </div>
+
+    <p class="quiet">
+      吐くほうを長くしてあるのは、そのほうが体が静まるからです。
+      吸うときに上がった脈は、吐きながら下がっていきます。
+    </p>
+    <p class="quiet">
+      そして衝動には、形があります。上がって、頂点を越えて、下がる。
+      <span class="breath">押さえ込むのではなく、頂点を越えるまで別のことをしていればいい。</span>
+      その別のことが、呼吸です。
     </p>
   </div>
 </section>
