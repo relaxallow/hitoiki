@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー｜ひと息、つきますか？</title>
+<style>
+:root {
+  --bg: #f9f8f6;
+  --ink: #272a2b;
+  --ink-2: #6b7274;
+  --ink-3: #9aa0a1;
+  --line: #e2ded8;
+  --breath: #537f82;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131518;
+    --ink: #e5e5e2;
+    --ink-2: #9aa0a1;
+    --ink-3: #6b7274;
+    --line: #2a2e31;
+    --breath: #6fa5a0;
+    --card: #1b1e21;
+  }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 2;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 0 28px; }
+
+/* 余白がこのサイトの主役 */
+section { padding: 120px 0; }
+section + section { border-top: 1px solid var(--line); }
+@media (max-width: 600px) { section { padding: 84px 0; } }
+
+h1, h2 { font-weight: 300; letter-spacing: 0.02em; line-height: 1.5; }
+h1 { font-size: 30px; }
+h2 { font-size: 22px; margin-bottom: 32px; }
+p { margin-bottom: 22px; }
+p:last-child { margin-bottom: 0; }
+.quiet { color: var(--ink-2); font-size: 15px; }
+.tiny { color: var(--ink-3); font-size: 13px; line-height: 1.9; }
+.breath { color: var(--breath); }
+
+/* 冒頭 */
+.hero { padding: 130px 0 120px; text-align: center; }
+.hero img { width: 104px; height: 104px; border-radius: 24px; margin-bottom: 34px; }
+.hero h1 { margin-bottom: 26px; }
+.hero .lead { color: var(--ink-2); font-size: 16px; }
+
+/* 言い切りの一行 */
+.line {
+  font-size: 20px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+/* きた ボタンの再現 */
+.kita {
+  width: 168px; height: 168px; margin: 0 auto 34px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--breath) 11%, transparent);
+  border: 1px solid color-mix(in srgb, var(--breath) 42%, transparent);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--breath); font-size: 25px;
+  animation: pulse 5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(0.97); }
+  50% { transform: scale(1.03); }
+}
+@media (prefers-reduced-motion: reduce) { .kita { animation: none; } }
+
+/* 時間帯の図 */
+.grid { display: flex; flex-direction: column; gap: 3px; margin: 6px 0 26px; }
+.row { display: flex; gap: 3px; align-items: center; }
+.row span { width: 15px; font-size: 10px; color: var(--ink-3); flex: none; }
+.cell { flex: 1; aspect-ratio: 1; border-radius: 2px; background: var(--line); }
+.hours { display: flex; gap: 3px; margin-left: 18px; }
+.hours div { flex: 1; font-size: 9px; color: var(--ink-3); text-align: center; }
+
+/* シリーズ */
+.series { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
+.item {
+  display: flex; align-items: center; gap: 18px;
+  padding: 18px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.item:last-child { border-bottom: none; }
+.item img { width: 44px; height: 44px; border-radius: 11px; flex: none; }
+.item b { font-weight: 400; font-size: 15px; display: block; line-height: 1.6; }
+.item small { color: var(--ink-3); font-size: 13px; }
+.soon { margin-left: auto; color: var(--ink-3); font-size: 11px; white-space: nowrap; }
+
+
+/* 吸う4秒・吐く6秒の長さくらべ */
+.ratio { display: flex; gap: 4px; margin: 34px 0 30px; }
+.ratio div {
+  padding: 13px 0; text-align: center;
+  font-size: 12px; border-radius: 4px; white-space: nowrap;
+}
+.ratio .in {
+  flex: 4;
+  background: color-mix(in srgb, var(--breath) 26%, transparent);
+  color: var(--ink);
+}
+.ratio .out {
+  flex: 6;
+  background: color-mix(in srgb, var(--breath) 13%, transparent);
+  color: var(--ink);
+}
+
+footer { padding: 70px 0 90px; border-top: 1px solid var(--line); }
+footer a { color: var(--breath); }
+</style>
+</head>
+<body>
+
+<section style="padding:90px 0 70px">
+  <div class="wrap">
+    <h1 style="font-size:24px; margin-bottom:14px">プライバシーポリシー</h1>
+    <p class="tiny">ひと息、つきますか？シリーズ<br>最終更新：2026年9月10日</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>集めていません。</h2>
+    <p class="quiet">
+      このアプリは、利用者の情報を<span class="breath">一切収集しません</span>。
+      サーバーもアカウントもなく、開発者が利用状況を見ることもできません。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>記録の置き場所</h2>
+    <p class="quiet">
+      吸いたくなった時刻や、見送ったかどうかの記録は、
+      すべてお使いのiPhoneの中にだけ保存されます。
+      外部に送信されることはありません。
+    </p>
+    <p class="quiet">
+      アプリを削除すると、記録も一緒に消えます。
+      残しておきたい場合は、設定の「記録を書き出す」で文字として取り出せます。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>マイクについて</h2>
+    <p class="quiet">
+      設定でオンにしたときだけ、呼吸の画面でマイクを使います。
+      使うのは<span class="breath">吐いた息の強さを画面の輪に映すため</span>だけです。
+    </p>
+    <p class="quiet">
+      音声はその場で数値に変換されるだけで、
+      <span class="breath">録音も、保存も、送信も一切しません。</span>
+      画面を閉じるとマイクは止まります。
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>広告と課金</h2>
+    <p class="quiet">
+      広告は表示しません。アプリ内課金もありません。
+      広告のための識別子（IDFA）も使っていません。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="tiny">
+      <b style="font-weight:400">お問い合わせ</b><br>
+      <a href="mailto:realitybitehand@gmail.com">realitybitehand@gmail.com</a>
+    </p>
+    <p class="tiny" style="margin-top:26px">
+      <a href="index.html">← ひと息、つきますか？ について</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
